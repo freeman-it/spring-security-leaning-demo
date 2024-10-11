@@ -25,7 +25,14 @@ public class HomeController {
     @GetMapping(value = "/index", produces = MediaType.APPLICATION_JSON_VALUE)
     public JsonResult<String> index() {
 
+
+
         System.out.println("");
+
+
+        System.out.println("git stash");
+
+
         System.out.println("git cherry");
         return JsonResult.success("成功", this.homeService.sayHello());
     }
