@@ -26,6 +26,7 @@ public class HomeController {
     public JsonResult<String> index() {
 
         System.out.println("tag");
+        System.out.println("tag");
         return JsonResult.success("成功", this.homeService.sayHello());
     }
 }
