@@ -26,6 +26,7 @@ public class HomeController {
     public JsonResult<String> index() {
 
         System.out.println("");
+        System.out.println("git cherry");
         return JsonResult.success("成功", this.homeService.sayHello());
     }
 }
