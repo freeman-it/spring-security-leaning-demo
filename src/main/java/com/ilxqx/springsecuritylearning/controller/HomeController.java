@@ -24,8 +24,7 @@ public class HomeController {
 
     @GetMapping(value = "/index", produces = MediaType.APPLICATION_JSON_VALUE)
     public JsonResult<String> index() {
-
-        System.out.println("tag");
+        System.out.println("git reset");
         return JsonResult.success("成功", this.homeService.sayHello());
     }
 }
