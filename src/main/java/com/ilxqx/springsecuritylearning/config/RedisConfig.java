@@ -30,7 +30,7 @@ public class RedisConfig implements BeanClassLoaderAware {
         RedisSerializer<Object> objectRedisSerializer = RedisSerializer.java(this.classLoader);
         redisTemplate.setValueSerializer(objectRedisSerializer);
         redisTemplate.setHashValueSerializer(objectRedisSerializer);
-
+//
         return redisTemplate;
     }
 
