@@ -35,15 +35,10 @@ public class RedisConfig implements BeanClassLoaderAware {
     }
 
     /**
-     * Callback that supplies the bean {@link ClassLoader class loader} to
-     * a bean instance.
-     * <p>Invoked <i>after</i> the population of normal bean properties but
-     * <i>before</i> an initialization callback such as
-     * {@link InitializingBean InitializingBean's}
-     * {@link InitializingBean#afterPropertiesSet()}
-     * method or a custom init-method.
-     *
-     * @param classLoader the owning class loader
+     *   设置bean 的类加载器
+     * @author xzm
+     * @date 2024/11/05 15:49
+     * @param classLoader
      */
     @Override
     public void setBeanClassLoader(ClassLoader classLoader) {
